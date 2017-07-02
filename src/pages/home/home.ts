@@ -18,7 +18,7 @@ export class HomePage {
 		this.barcodeScanner.scan().then((barcodeData) => {
 			// Success! Barcode data is here
       console.log(barcodeData);
-			this.dato = barcodeData;
+			this.dato = JSON.stringify(barcodeData);
 		}, (err) => {
 			// An error occurred
       console.log(err);
